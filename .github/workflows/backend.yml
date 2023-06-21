@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - dev
+  schedule:
+    - cron: '0 12 * * *'  # 日本時間で毎晩 21 時
 
 defaults:
   run:
