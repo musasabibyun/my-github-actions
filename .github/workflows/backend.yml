@@ -3,6 +3,7 @@ name: backend
 on:
   push:
     branches:
+      - main
       - dev
 
 defaults:
@@ -10,7 +11,7 @@ defaults:
     working-directory: myapp/backend
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
